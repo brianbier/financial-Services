@@ -1,0 +1,407 @@
+/***********************
+Main CSS
+***********************/
+html,body{
+  font-family: helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  max-width: 1800px;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding-top: 30px;
+  opacity: 1;
+  -webkit-filter: invert(100%);/*managed to get the logo a didfferent color*/
+}
+header{
+  text-align: center;
+  background-color: rgb(198, 208, 227);
+}
+h1{
+  font-size: 60px;
+  margin-top: 20px;
+  color: #fff;
+}
+ul{
+  padding:10px;
+  position: relative;
+  background-color:rgb(115, 130, 162);
+  background:-webkit-linear-gradient(top,rgb(171, 207, 242));
+  background:-moz-linear-gradient(top,rgba(232, 160, 184, 1));
+  padding-top: 20px;
+  border-bottom: 5px solid rgb(198, 208, 227);
+
+}
+li{
+    display: inline;
+    padding: 15px;
+}
+a{
+  color:#fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+p{
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 2px;
+  line-height: 35px;
+  padding-top: 10px;
+  color: #fff;
+}
+article{
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.office-image{
+ background-image: url("office2.jpeg");
+  height: 800px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -15px auto;
+
+}
+
+footer{ 
+  background-color:rgb(115, 130, 162); 
+  color: #fff; 
+  text-align: center; 
+  font-size: 15px;
+  position:relative; 
+  top:18px;
+  width:100%; 
+  padding: 30px;
+}
+
+
+/**************************
+About page
+**************************/
+
+.image1{
+  background: url("viviana-alyssa.jpeg");
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+.image1 p{
+  color: rgba(255,255,255,1);
+  background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  background:-moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+
+}
+small{
+  opacity: 0;
+
+}
+
+.image2{
+  background: url("erica.jpg");
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+.image2 p{
+  color: rgba(255,255,255,1);
+  background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  background:-moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+
+}
+.image3{
+  background: url("financial-coaches.jpg");
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+.image3 p{
+  color: rgba(255,255,255,1);
+  background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  background:-moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 25px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+
+}
+.image4{
+  background: url("brian.jpg");
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+.image4 p{
+  color: rgba(255,255,255,1);
+  background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  background:-moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 25px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+
+}
+.show-description p{
+  height: 300px;
+}
+.show-description small{
+  opacity: 1;
+  font-size: 15px;
+}
+/*************************************
+my special ROBOT
+*************************************/
+.beep{
+  margin: 0 auto;
+  height:0px;
+  width: 1px;
+  border: 5px solid transparent;
+  border-top:4px solid #e8a0b8;
+  border-bottom:40px solid rgb(115, 130, 162);
+}
+
+@keyframes blink{
+  50%{
+    background: radial-gradient(circle, red 15%, transparent 40%),#e8a0b8;
+    background-size: 60px 150px;
+  }
+}
+@-webkit-keyframes blink {
+  50%{
+     background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #e8a0b8;
+  }
+
+}
+@-moz-keyframes blink{
+  50%{
+ background: -moz-radial-gradient(circle, white 15%, transparent 40%), #e8a0b8; 
+  }
+}
+
+.laser{
+  animation:blink .5s infinite;
+  -webkit-animation:blink .5s infinite;
+  -moz-animation: blink .5s infinite;
+}
+
+.brain {
+  background: radial-gradient(circle, white 15%, transparent 40%), #e8a0b8;
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%), #e8a0b8; 
+  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #e8a0b8;
+  background-size: 60px 150px;
+  height: 120px;
+  width: 120px;
+  border-radius: 40px;
+  border-bottom: 30px solid rgb(115, 130, 162);
+  margin: 0 auto;
+}
+.torso{
+  margin:0 auto;
+  background: rgb(115, 130, 162);
+  width: 160px;
+  height:150px;
+  border-radius:20px;
+  border-top: 30px solid rgb(198, 208, 227);
+  border-bottom: 30px solid rgb(198, 208, 227);
+}
+.foot{
+  margin: 0 auto;
+  width: 20px;
+  height: 55px;
+  background: transparent;
+  border-left: 30px solid rgb(115, 130, 162);
+  border-right: 30px solid rgb(115, 130, 162);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.left{
+  font-family: "Poller One", sans-serif;
+  color: #e8a0b8;
+  font-size:150px;
+  transform: rotate(186deg);
+  -webkit-transform: rotate(186deg);
+  -moz-transform: rotate(186deg);
+  position: relative;
+  left:-156px;
+  top:-26px;
+  z-index: -1;
+}
+.right{
+  font-family: "Poller One", sans-serif;
+  color: #e8a0b8;
+  font-size:150px;
+  transform: scaleY(-1) rotate(365deg);
+  -webkit-transform: scaleY(-1) rotate(365deg);
+  -moz-transform: scaleY(-1) rotate(365deg);
+  position: relative;
+  left:155px;
+  top:-205px;
+  z-index: -1;
+}
+.flash-button{
+  margin-left: 99px;
+  margin-top: 15px;
+}
+
+
+.fill{
+background:white;
+color:red;
+border-bottom: 2px black solid;
+font-family: "Shadows Into Light";
+padding: 0 6px;
+margin: 4px;
+font-size: 25px;
+}
+
+.prompt{
+  text-align: center;
+  font-family: "Fjalla One";
+  font-size: 20px;
+}
+.contact-button{
+  margin-left: 480px;
+  padding: 10px 50px 10px 50px;
+}
+.input{
+    font-size:24px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+button{
+  font-size: 20px;
+  border-radius: 2px;
+  border: 0px;
+  color: #fff;
+  background: #e8a0b8;
+  padding: 5px 25px 5px 25px;
+}
+
+
+input{
+  border:0px;
+  padding: 10px;
+  border-radius: 2px;
+  font-size:16px;
+  margin-top: 20px;
+}
+
+input[type="submit"]{
+  color: #fff;
+  background-color: #e8a0b8;
+}
+
+
+/***************************
+Media Query for Mobile phones
+***************************/
+@media(max-width: 500px){
+  h1{
+    font-size: 25PX
+  }
+
+  li{
+    font-size: 18px;
+    display: block;
+    padding:5px;
+  }
+  p{
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .coach-image-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  }
+
+  .coach-image-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 20px;
+  border: 5px solid #fff;
+}
+.coach-image-3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 20px;
+  border: 5px solid #fff;
+}
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 200px;
+}
+}
+
