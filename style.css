@@ -33,6 +33,7 @@ ul{
   background:-webkit-linear-gradient(top,rgb(171, 207, 242));
   background:-moz-linear-gradient(top,rgba(232, 160, 184, 1));
   padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 5px solid rgb(198, 208, 227);
 
 }
@@ -61,7 +62,7 @@ article{
 }
 
 .office-image{
- background-image: url("office2.jpeg");
+ background-image: url("images/office2.jpeg");
   height: 800px;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -73,12 +74,15 @@ article{
 footer{ 
   background-color:rgb(115, 130, 162); 
   color: #fff; 
-  text-align: center; 
+  text-align: left; 
   font-size: 15px;
   position:relative; 
   top:18px;
   width:100%; 
   padding: 30px;
+}
+input{
+  padding-left: 200px;
 }
 
 
@@ -87,7 +91,7 @@ About page
 **************************/
 
 .image1{
-  background: url("viviana-alyssa.jpeg");
+  background: url("images/viviana-alyssa.jpeg");
   height: 400px;
   background-size: cover;
   position: relative;
@@ -117,7 +121,7 @@ small{
 }
 
 .image2{
-  background: url("erica.jpg");
+  background: url("images/erica.jpg");
   height: 400px;
   background-size: cover;
   position: relative;
@@ -142,7 +146,7 @@ small{
 
 }
 .image3{
-  background: url("financial-coaches.jpg");
+  background: url("images/financial-coaches.jpg");
   height: 400px;
   background-size: cover;
   position: relative;
@@ -167,7 +171,7 @@ small{
 
 }
 .image4{
-  background: url("brian.jpg");
+  background: url("images/brian.jpg");
   height: 400px;
   background-size: cover;
   position: relative;
